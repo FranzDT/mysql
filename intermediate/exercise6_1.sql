@@ -1,4 +1,4 @@
-select e.employeeNumber 'D', concat(e.firstName,' ',e.lastName) as 'Employee',
+select e.employeeNumber 'ID', concat(e.firstName,' ',e.lastName) as 'Employee',
 	CASE
 		WHEN count(c.salesRepEmployeeNumber) > 0 then CASE
 						WHEN count(c.salesRepEmployeeNumber) > 5
